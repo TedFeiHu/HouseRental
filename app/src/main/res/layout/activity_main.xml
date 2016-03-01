@@ -25,6 +25,8 @@
     </FrameLayout>
 
     <RadioGroup
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp"
         android:id="@+id/radio_group_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

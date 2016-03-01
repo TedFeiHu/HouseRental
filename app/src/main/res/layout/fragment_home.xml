@@ -2,11 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_whole"
     android:orientation="vertical">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
         android:layout_weight="1"
         android:background="@mipmap/home_adv"
         android:contentDescription="@string/home_adv" />
@@ -14,35 +16,99 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <TextView
+        <ImageView
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="bottom|center"
-            android:text="整租" />
+            android:background="@mipmap/rental_whole" />
 
-        <TextView
+        <ImageView
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="bottom|center"
-            android:text="合租" />
+            android:background="@mipmap/rental_share" />
 
-        <TextView
+        <ImageView
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="bottom|center"
-            android:text="求租" />
+            android:background="@mipmap/rental_request" />
 
     </LinearLayout>
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></GridLayout>
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/home_rental_village"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableRight="@mipmap/rental_village"
+                android:gravity="center"
+                android:text="社区找房"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/home_rental_map"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableRight="@mipmap/rental_map"
+                android:gravity="center"
+                android:text="地图找房"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/home_rental_rent"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableRight="@mipmap/rental_rent"
+                android:gravity="center"
+                android:text="我要出租"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/home_rental_book"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableRight="@mipmap/rental_book"
+                android:gravity="center"
+                android:text="看房笔记"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </LinearLayout>
