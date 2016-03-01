@@ -6,14 +6,14 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 
-import com.hu131.houserental.fragment.Discover;
+import com.hu131.houserental.fragment.Search;
 import com.hu131.houserental.fragment.Home;
 import com.hu131.houserental.fragment.User;
 
 public class MainActivity extends Activity {
 
     private Home homeFragment;
-    private Discover discoverFragment;
+    private Search searchFragment;
     private User userFragment;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
@@ -55,13 +55,13 @@ public class MainActivity extends Activity {
                     fragmentTransaction.show(homeFragment);
                 }
                 break;
-            case R.id.discover:
+            case R.id.search:
                 hide();
-                if (discoverFragment == null) {
-                    discoverFragment = new Discover();
-                    fragmentTransaction.add(R.id.frame_main, discoverFragment, "discover");
+                if (searchFragment == null) {
+                    searchFragment = new Search();
+                    fragmentTransaction.add(R.id.frame_main, searchFragment, "search");
                 } else {
-                    fragmentTransaction.show(discoverFragment);
+                    fragmentTransaction.show(searchFragment);
                 }
                 break;
             case R.id.user:
@@ -88,8 +88,8 @@ public class MainActivity extends Activity {
             fragmentTransaction.hide(homeFragment);
         }
 
-        if (discoverFragment != null) {
-            fragmentTransaction.hide(discoverFragment);
+        if (searchFragment != null) {
+            fragmentTransaction.hide(searchFragment);
         }
 
         if (userFragment != null) {

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">房屋租赁系统</string>
+    <string name="home">首页</string>
+    <string name="search">发现</string>
+    <string name="user">我</string>
+    <string name="home_adv">广告图片</string>
+
 </resources>

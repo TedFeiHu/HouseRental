@@ -13,11 +13,11 @@ import com.hu131.houserental.R;
  * Created by Hu131 on 2016/2/24.
  * 查找fragment
  */
-public class Discover extends Fragment{
+public class Search extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_discover, null);
+        View view = inflater.inflate(R.layout.fragment_search, null);
         return view;
     }
 }

@@ -18,7 +18,11 @@
         android:id="@+id/frame_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></FrameLayout>
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
 
     <RadioGroup
         android:id="@+id/radio_group_main"
@@ -34,18 +38,20 @@
             android:layout_weight="1"
             android:button="@null"
             android:checked="false"
+            android:drawableTop="@drawable/home_selector"
             android:gravity="center_horizontal"
-            android:text="首页"
+            android:text="@string/home"
             android:textColor="@color/text_select" />
 
         <RadioButton
-            android:id="@+id/discover"
+            android:id="@+id/search"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
+            android:drawableTop="@drawable/search_selector"
             android:gravity="center_horizontal"
-            android:text="发现"
+            android:text="@string/search"
             android:textColor="@color/text_select" />
 
         <RadioButton
@@ -54,8 +60,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
+            android:drawableTop="@drawable/user_selector"
             android:gravity="center_horizontal"
-            android:text="我"
+            android:text="@string/user"
             android:textColor="@color/text_select" />
     </RadioGroup>
 
