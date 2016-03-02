@@ -5,7 +5,6 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.WindowManager;
 import android.widget.RadioGroup;
 
 import com.google.android.gms.appindexing.Action;

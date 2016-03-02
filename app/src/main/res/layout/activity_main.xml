@@ -6,13 +6,13 @@
     android:orientation="vertical"
     tools:context="com.hu131.houserental.MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/title"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textSize="20sp" />
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/title"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/app_name"-->
+        <!--android:textSize="20sp" />-->
 
     <FrameLayout
         android:id="@+id/frame_main"
@@ -25,6 +25,8 @@
     </FrameLayout>
 
     <RadioGroup
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
         android:paddingTop="5dp"
         android:paddingBottom="2dp"
         android:id="@+id/radio_group_main"

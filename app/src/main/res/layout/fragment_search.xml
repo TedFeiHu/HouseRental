@@ -2,10 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_whole"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title"
+        android:gravity="center"
+        android:text="发现"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <ListView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="discover" />
+        android:background="@color/white">
+
+    </ListView>
+
 </LinearLayout>
