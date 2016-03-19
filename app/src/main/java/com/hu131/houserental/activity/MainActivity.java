@@ -1,4 +1,4 @@
-package com.hu131.houserental;
+package com.hu131.houserental.activity;
 
 import android.app.Activity;
 import android.app.FragmentManager;
@@ -10,6 +10,7 @@ import android.widget.RadioGroup;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.hu131.houserental.R;
 import com.hu131.houserental.fragment.Search;
 import com.hu131.houserental.fragment.Home;
 import com.hu131.houserental.fragment.User;

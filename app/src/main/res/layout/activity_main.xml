@@ -4,36 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.hu131.houserental.MainActivity">
+    tools:context=".activity.MainActivity">
 
     <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:background="@color/title"-->
-        <!--android:gravity="center"-->
-        <!--android:text="@string/app_name"-->
-        <!--android:textSize="20sp" />-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/title"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/app_name"-->
+    <!--android:textSize="20sp" />-->
 
     <FrameLayout
         android:id="@+id/frame_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
+        android:layout_weight="1"></FrameLayout>
 
     <RadioGroup
-        android:layout_marginTop="3dp"
-        android:background="#ffffff"
-        android:paddingTop="5dp"
-        android:paddingBottom="2dp"
         android:id="@+id/radio_group_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
         android:checkedButton="@id/home"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="5dp">
 
         <RadioButton
             android:id="@+id/home"
