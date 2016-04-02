@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background_whole"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_whole"
+              android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="#ffffff"
-        android:textSize="20sp" />
+        android:textSize="20sp"/>
 
     <ImageView
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
         android:background="@mipmap/home_adv"
-        android:contentDescription="@string/home_adv" />
+        android:contentDescription="@string/home_adv"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,29 +34,29 @@
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@mipmap/rental_whole" />
+            android:background="@mipmap/rental_whole"/>
 
         <TextView
             android:layout_width="2dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
         <ImageView
             android:id="@+id/home_iv_share"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@mipmap/rental_share" />
+            android:background="@mipmap/rental_share"/>
 
         <TextView
             android:layout_width="2dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
         <ImageView
             android:id="@+id/home_iv_request"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@mipmap/rental_request" />
+            android:background="@mipmap/rental_request"/>
 
     </LinearLayout>
 
@@ -83,7 +83,7 @@
                 android:drawableRight="@mipmap/rental_village"
                 android:gravity="center"
                 android:text="社区找房"
-                android:textSize="20sp" />
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/home_rental_map"
@@ -94,7 +94,7 @@
                 android:drawableRight="@mipmap/rental_map"
                 android:gravity="center"
                 android:text="地图找房"
-                android:textSize="20sp" />
+                android:textSize="20sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -113,7 +113,7 @@
                 android:drawableRight="@mipmap/rental_rent"
                 android:gravity="center"
                 android:text="我要出租"
-                android:textSize="20sp" />
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/home_rental_book"
@@ -124,7 +124,7 @@
                 android:drawableRight="@mipmap/rental_book"
                 android:gravity="center"
                 android:text="看房笔记"
-                android:textSize="20sp" />
+                android:textSize="20sp"/>
         </LinearLayout>
     </LinearLayout>
 

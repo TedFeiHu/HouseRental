@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity" >
+
+    <item
+        android:id="@+id/menu_action_edit"
+        android:orderInCategory="100"
+        android:title="action_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_action_search"
+        android:orderInCategory="80"
+        android:title="action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"/>
+
+</menu>
