@@ -6,7 +6,7 @@
     android:background="@color/background_whole"
     android:orientation="vertical">
 
-    <include layout="@layout/toolbar"/>
+    <include layout="@layout/toolbar_layer2"/>
 
     <TextView
         android:layout_width="match_parent"

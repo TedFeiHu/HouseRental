@@ -26,7 +26,6 @@ public class ListActivity extends AppCompatActivity {
     private WholeRentalFragment wholeRentalFragment;
     private ShareRentalFragment shareRentalFragment;
     private RequestRentalFragment requestRentalFragment;
-    private Menu menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,13 +55,12 @@ public class ListActivity extends AppCompatActivity {
      */
     private void initView() {
         //设置标题栏
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_layer2);
         toolbar.setTitle(title);
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setHomeAsUpIndicator();
-
+        getSupportActionBar().setHomeAsUpIndicator(R.mipmap.layer2_toolbar_btn_back);
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         switch (id) {
