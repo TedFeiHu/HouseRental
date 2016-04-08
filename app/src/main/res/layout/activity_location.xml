@@ -59,7 +59,7 @@
             android:textSize="16sp"
             android:visibility="gone"/>
         <com.hu131.houserental.view.LocationLetterListView
-            android:id="@+id/MyLetterListView01"
+            android:id="@+id/list_view_location_letter"
             android:layout_width="25dip"
             android:layout_height="fill_parent"
             android:layout_below="@id/sh"
