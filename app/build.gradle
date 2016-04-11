@@ -4,6 +4,12 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
     defaultConfig {
         applicationId "com.hu131.houserental"
         minSdkVersion 15
@@ -24,4 +30,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile files('src/main/libs/BaiduLBS_Android.jar')
+    compile files('src/main/libs/pinyin4android1.0.jar')
+    compile files('src/main/libs/pinyin4j-2.5.0.jar')
 }
