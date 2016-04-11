@@ -20,7 +20,6 @@
 # Generated files
 bin/
 gen/
-out/
 
 # Gradle files
 .gradle/
@@ -40,9 +39,3 @@ proguard/
 
 # Android Studio captures folder
 captures/
-
-# Intellij
-
-# Keystore files
-*.jks
-/captures
