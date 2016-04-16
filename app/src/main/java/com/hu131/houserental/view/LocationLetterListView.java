@@ -11,9 +11,8 @@ import android.view.View;
 public class LocationLetterListView extends View {
 
 	OnTouchingLetterChangedListener onTouchingLetterChangedListener;
-	String[] b = {"定位", "最近", "热门", "全部", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
-			"L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X",
-			"Y", "Z" };
+	String[] b = {"定位", "最近", "热门", "全部", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+			"K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
 	int choose = -1;
 	Paint paint = new Paint();
 	boolean showBkg = false;
@@ -64,6 +63,8 @@ public class LocationLetterListView extends View {
 		final int c = (int) (y / getHeight() * b.length);
 		switch (action) {
 		case MotionEvent.ACTION_DOWN:
+
+
 			showBkg = true;
 			if (oldChoose != c && listener != null) {
 				if (c >= 0 && c < b.length) {
@@ -91,17 +92,11 @@ public class LocationLetterListView extends View {
 		return true;
 	}
 
-	@Override
-	public boolean onTouchEvent(MotionEvent event) {
-		return super.onTouchEvent(event);
-	}
-
-	public void setOnTouchingLetterChangedListener(
-			OnTouchingLetterChangedListener onTouchingLetterChangedListener) {
+	public void setOnTouchingLetterChangedListener(OnTouchingLetterChangedListener onTouchingLetterChangedListener) {
 		this.onTouchingLetterChangedListener = onTouchingLetterChangedListener;
 	}
 
 	public interface OnTouchingLetterChangedListener {
-		public void onTouchingLetterChanged(String s);
+		void onTouchingLetterChanged(String s);
 	}
 }

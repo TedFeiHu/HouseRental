@@ -88,7 +88,7 @@ public class DBHelper extends SQLiteOpenHelper {
                     dbf.delete();
                 }
                 SQLiteDatabase.openOrCreateDatabase(dbf, null);
-                // 复制asseets中的db文件到DB_PATH下
+                // 复制assets中的db文件到DB_PATH下
                 copyDataBase();
             } catch (IOException e) {
                 throw new Error("数据库创建失败");
