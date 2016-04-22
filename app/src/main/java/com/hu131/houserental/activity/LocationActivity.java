@@ -336,6 +336,7 @@ public class LocationActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Log.i("----","---------------");
         //toolBar返回键回调事件
         if (item.getItemId() == android.R.id.home) {
             finish();
@@ -353,34 +354,28 @@ public class LocationActivity extends AppCompatActivity {
         if (city.equals("")) {
             if (BDMapUtil.city == null) { //定位于用户选择都为空，返回默认北京
                 city = "北京";
-                intent.putExtra("city", city);
-                setResult(Constants.LOCATION_ACTIVITY_RESULT_CODE, intent);
-                LocationActivity.super.finish();
             } else {  //选择空，定位有值，返回定位
                 city = BDMapUtil.city;
-                intent.putExtra("city", city);
-                setResult(Constants.LOCATION_ACTIVITY_RESULT_CODE, intent);
-                LocationActivity.super.finish();
             }
         } else {
             if (!(BDMapUtil.city == null)) {  //选择不为空　，定位不为空
-                if (!city.equals(BDMapUtil.city)) {
-                    new AlertDialog.Builder(this).setMessage("您当前选择的位置与定位不一致，是否继续？")
-                            .setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    intent.putExtra("city", city);
-                                    setResult(Constants.LOCATION_ACTIVITY_RESULT_CODE, intent);
-                                    LocationActivity.super.finish();
-                                }
-                            }).setNegativeButton("取消", null).show();
-                }else { //都不为空，但两者值一样
-                    intent.putExtra("city", city);
-                    setResult(Constants.LOCATION_ACTIVITY_RESULT_CODE, intent);
-                    LocationActivity.super.finish();
+                if (!city.equals(BDMapUtil.city)) {//两者值不一样
+                    new AlertDialog.Builder(this)
+                            .setMessage("您当前选择的位置与定位不一致，是否继续？")
+                            .setPositiveButton("确定", null)
+                            .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                                  @Override
+                                  public void onClick(DialogInterface dialog, int which) {
+                                      return;
+                                  }
+                            })
+                            .show();
                 }
             }
         }
+        intent.putExtra("city", city);
+        setResult(Constants.LOCATION_ACTIVITY_RESULT_CODE, intent);
+        super.finish();
     }
 
 
