@@ -8,8 +8,6 @@ import android.widget.BaseAdapter;
 
 import com.hu131.houserental.R;
 
-import java.util.zip.Inflater;
-
 /**
  * Created by Hu131 on 2016/3/18.
  */

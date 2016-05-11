@@ -21,9 +21,6 @@ import com.hu131.houserental.utils.Constants;
  * 主页fragment
  */
 public class Home extends Fragment implements View.OnClickListener {
-
-
-
     private ImageView ivWhole;
     private ImageView ivShare;
     private ImageView ivRequest;
@@ -48,7 +45,6 @@ public class Home extends Fragment implements View.OnClickListener {
         extras = new Bundle();
         intentToLocation = new Intent(getActivity(), LocationActivity.class);
     }
-
 
     /**
      * 初始化监听
@@ -75,9 +71,7 @@ public class Home extends Fragment implements View.OnClickListener {
         ivShare = (ImageView) view.findViewById(R.id.home_iv_share);
         ivRequest = (ImageView) view.findViewById(R.id.home_iv_request);
         tvVillage = (TextView) view.findViewById(R.id.home_rental_village);
-
     }
-
 
     /**
      * 点击事件
