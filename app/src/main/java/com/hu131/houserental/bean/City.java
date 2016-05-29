@@ -1,8 +1,8 @@
 package com.hu131.houserental.bean;
 
 public class City {
-    public String name;
-    public String pinyi;
+    private String name;
+    private String pinyi;
 
     public City(String name, String pinyi) {
         super();

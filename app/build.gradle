@@ -29,4 +29,7 @@ dependencies {
     compile files('libs/pinyin4android1.0.jar')
     compile files('libs/pinyin4j-2.5.0.jar')
     compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/commons-io-2.5.jar')
+    compile files('libs/gson-2.3.1.jar')
+    compile files('libs/library-1.0.19.jar')
 }
